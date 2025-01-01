@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PlacesRank</title>
+  </head>
+  <body>
+    <h1>My Ranks</h1>
+    {% if not books %}
+      <p>Library is empty.</p>
+    {% else %}
+      <ul>
+        {% for book in books %}
+          <li>
+            <a href="{{ url_for('delete', id=book.id) }}">Delete</a>
+            {{ book.title }} - {{ book.author }} - {{ book.ranking }}/10
+            <a href="{{ url_for('edit', id=book.id) }}">Edit Ranking</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <a href="{{ url_for('add') }}">Add New Book</a>
+  </body>
+</html>
