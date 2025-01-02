@@ -3,48 +3,46 @@
 RankingBooks is a Flask-based web application designed for managing and ranking a collection of books. Users can add, edit, or delete book entries and update their rankings through an intuitive and interactive interface.
 
 ## **Features**
-Home Page: Displays all books with their titles, authors, and rankings.
-Add Book: Allows users to add new books by specifying the title, author, and ranking.
-Edit Book Ranking: Users can update the ranking of an existing book.
-Delete Book: Provides an option to remove a book from the list.
+Home Page: Displays all books with their titles, authors, and rankings.<br>
+Add Book: Allows users to add new books by specifying the title, author, and ranking.<br>
+Edit Book Ranking: Users can update the ranking of an existing book.<br>
+Delete Book: Provides an option to remove a book from the list.<br>
 
 ## **Technologies Used**
-Python (Flask): Backend framework for managing routing and server-side logic.
-HTML: For the structure of web pages.
-Jinja2: Template engine for rendering dynamic content.
-CSS: For styling the application interface.
-How to Run the Application
-Clone the Repository:
+Python (Flask): Backend framework for managing routing and server-side logic.<br>
+HTML: For the structure of web pages.<br>
+Jinja2: Template engine for rendering dynamic content.<br>
+CSS: For styling the application interface.<br>
 
 ## **File Structure**
-app.py: Main Flask application file.
-templates/: Contains HTML templates:
-index.html: Displays the list of books.
-add.html: Form for adding new books.
-edit_ranking.html: Form for editing book rankings.
+app.py: Main Flask application file.<br>
+templates/: Contains HTML templates.<br>
+index.html: Displays the list of books.<br>
+add.html: Form for adding new books.<br>
+edit_ranking.html: Form for editing book rankings.<br>
 
 ## **Features in Detail**
 Dynamic Routing:
 
-/: Displays the list of books.
-/add: Provides a form to add new books.
-/edit/<id>: Enables editing of book rankings.
-/delete/<id>: Deletes a book by its ID.
+/: Displays the list of books.<br>
+/add: Provides a form to add new books.<br>
+/edit/<id>: Enables editing of book rankings.<br>
+/delete/<id>: Deletes a book by its ID.<br>
 
 Interactive Forms:
-Input forms are implemented using HTML and Flask request handling for user-friendly interactions.
+Input forms are implemented using HTML and Flask request handling for user-friendly interactions.<br>
 
 Data Management:
-Simulated data is stored in a Python list for simplicity. For production, this can be replaced with a database (e.g., SQLite, PostgreSQL).
+Simulated data is stored in a Python list for simplicity. For production, this can be replaced with a database (e.g., SQLite, PostgreSQL).<br>
 
 ## **Advanced Programming Features**
-RESTful Routes: Implements clear and concise URL patterns for CRUD operations.
-Template Inheritance: Ensures modular and reusable HTML components with Jinja2.
-Dynamic Content Rendering: Leverages Flask and Jinja2 for rendering dynamic book details.
-Global Data Management: Uses a Python list to simulate a database for seamless demonstration.
+RESTful Routes: Implements clear and concise URL patterns for CRUD operations.<br>
+Template Inheritance: Ensures modular and reusable HTML components with Jinja2.<br>
+Dynamic Content Rendering: Leverages Flask and Jinja2 for rendering dynamic book details.<br>
+Global Data Management: Uses a Python list to simulate a database for seamless demonstration.<br>
 
 ## **Future Enhancements**
-Integrate a database for persistent storage.
-Add authentication to manage user-specific book lists.
-Enable sorting and filtering of books by ranking or author.
-Enhance UI/UX with Bootstrap or similar frameworks.
+Integrate a database for persistent storage.<br>
+Add authentication to manage user-specific book lists.<br>
+Enable sorting and filtering of books by ranking or author.<br>
+Enhance UI/UX with Bootstrap or similar frameworks.<br>
